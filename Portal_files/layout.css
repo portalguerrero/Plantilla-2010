@@ -29,7 +29,7 @@ html {
 /* Los encabezado no deben llevar espaciado de margenes o padding */
 body, div, span, td, th, h1, h2, h3, h4, h5, h6, ul, li {
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 	font: normal 9pt Arial, Helvetica, sans-serif;
 }
 
@@ -42,6 +42,7 @@ ul, li {
 /* Los titulos son en negritas */
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Los titulos principales deben ser grandes */
@@ -98,8 +99,6 @@ p.vermas {
 
 /* llevan a su izquierda una imagen */
 p.vermas a {
-	padding-left: 18px;
-	background: url(http://guerrero.gob.mx/skins/icons/masinfo.gif) left center no-repeat;
 	font-size: 98%;
 }
 
@@ -114,7 +113,7 @@ ul li {
 	padding-bottom: 4px;
 	padding-left: 10px;
 	margin-left: 2px;
-	background: url(http://guerrero.gob.mx/skins/icons/flecha.jpg) left 30% no-repeat;
+	background: url(../icons/arrow-articulos.jpg) top center no-repeat;
 }
 
 /* las ligas de las listas no tienen estan subrayadas */
@@ -158,8 +157,10 @@ ul li a:hover {
 
 /* Encabezado del sitio, el fondo se pone dinamico */
 #encabezado, #encabezado-main {
-	height: 214px;
 	border-top: 0;
+	background: #fff url(../images/header.jpg) top center no-repeat;
+	height: 116px;
+	line-height: 16px;
 }
 
 #encabezado {
@@ -260,7 +261,7 @@ ul li a:hover {
 #menu-superior {
 	height: 29px;
 	clear: both;
-	border-bottom: 5px solid #47b7df;
+	border-bottom: 10px solid #47b7df;
 }
 
     /* Las ligas no llevan subrayado */
@@ -268,9 +269,14 @@ ul li a:hover {
 
 	/* interior del menu con el fondo gris */
 	#menu-superior div {
-	background-color: #333;
-	font-weight: bold;	
+		background-color: #333;
+		font-weight: bold;
+		background: #333 url(../images/bg-botonesoff.jpg) center bottom no-repeat;
 	}
+	
+	#menu-superior div:hover {
+			background: #333 url(../images/bg.jpg) center bottom repeat-x;
+		}
 	
 	/* El titulo del menu no se debe mostrar */
 	#menu-superior div h3 {
@@ -295,11 +301,11 @@ ul li a:hover {
 	 * se acomode enseguida de el
 	 */
 	#menu-superior .menu-option div {
-	height: 29px;
-	text-align: center;	
-	float: left;
-	line-height: 28px;
-	margin-right: 1px;
+		height: 29px;
+		text-align: center;	
+		float: left;
+		line-height: 28px;
+		margin-right: 1px;
 	}
 	
 	#menu-superior .menu-option a { color: #fff; }
@@ -307,77 +313,71 @@ ul li a:hover {
 	/* Inicio */
 	#menu-superior .red div {
 		width: 90px;
-		background: #333 url(../images/binicio_off.jpg) center bottom no-repeat;
+		/*background: #333 url(../images/binicio_off.jpg) center bottom no-repeat;*/
 	}		
 	
 		/* Respuesta al evento mouseOver en Inicio y seleccionado */
-		#menu-superior #inicio div:hover, #tag-inicio #inicio div, #tag- #inicio div {
-			background: #333 url(../images/binicio_on.jpg) center bottom no-repeat;
+		#tag-inicio #inicio div, #tag- #inicio div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Perfiles y temas */
 	#menu-superior .blue div {
 		width: 134px;
-		background: #333 url(../images/bperfiles_off.jpg) center bottom no-repeat;
 	}
 		/* Respuesta al evento mouseOver en Perfiles y temas */
-		#menu-superior #audytem div:hover, #tag-audytem #audytem div {
-			background: #333 url(../images/bperfiles_on.jpg) center bottom no-repeat;
+		#tag-audytem #audytem div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Tramites y servicios */
 	#menu-superior .green div {
 		width: 140px;
-		background: #333 url(../images/btramites_off.jpg) center bottom no-repeat;
 	}
 		/* Respuesta al evento mouseOver en Tramites y servicios */
-		#menu-superior #tramyserv div:hover, #tag-tramyserv #tramyserv div {
-			background: #333 url(../images/btramites_on.jpg) center bottom no-repeat;
+		#tag-tramyserv #tramyserv div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Gobierno */
 	#menu-superior .yellow div {
 		width: 84px;
-		background: #333 url(../images/bgobierno_off.jpg) center bottom no-repeat;
 	}
 	
 		/* Respuesta al evento mouseOver en Gobierno */
-		#menu-superior #gobierno div:hover, #tag-gobierno #gobierno div {
-			background: #333 url(../images/bgobierno_on.jpg) center bottom no-repeat;
+		#tag-gobierno #gobierno div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Nuestro estado */
 	#menu-superior .orange div {
 		width: 117px;
-		background: #333 url(../images/bnuestroestado_off.jpg) center bottom no-repeat;
 	}
 
 		/* Respuesta al evento mouseOver en Nuestro estado */
-		#menu-superior #nestado div:hover, #tag-nestado #nestado div {
-			background: #333 url(../images/bnuestroestado_on.jpg) center bottom no-repeat;
+		#tag-nestado #nestado div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Sala de prensa */
 	#menu-superior .navy div {
 		width: 124px;
-		background: #333 url(../images/bprensa_off.jpg) center bottom no-repeat;
 	}
 
 		/* Respuesta al evento mouseOver en Sala de prensa */
-		#menu-superior #noticias div:hover, #tag-noticias #noticias div {
-			background: #333 url(../images/bprensa_on.jpg) center bottom no-repeat;
+		#tag-noticias #noticias div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 	
 	/* Contacto */
 	#menu-superior .gray div {
 		width: 89px;
 		clear: right;
-		background: #333 url() center bottom no-repeat;
 	}
 	
 		/* Respuesta al evento mouseOver en Contacto */
-		#menu-superior #contacto div:hover, #tag-contacto #contacto div {
-			background: #333 url(../images/bcontacto_on.jpg) center bottom no-repeat;
+		#tag-contacto #contacto div {
+			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
 		}
 
 /**
@@ -433,23 +433,28 @@ ul li a:hover {
 
 /* Temas principales del portal en el index */
 #content-temas {
-	width: 414px;
-	height: 217px;
-	background: url(http://guerrero.gob.mx/skins/gro-base-08/images/temas.jpg) top center no-repeat;
+	width: 416px;
+	height: 257px;
+	background: url(../images/temas.jpg) top center no-repeat;
+	clear: both;
 }
 
 	#content-temas h3 {
-		padding-left: 8px;
+		font-weight: normal;
+		font-size: 18px;
+		color: #369;
+		text-align: center;
 	}
 	
 	#content-temas h3 a {
-		text-decoration: underline;
+		color: #369;
+		text-decoration: none;
 	}
 	
 	/* Ccntenidos en los temas */
 	#temas-col1, #temas-col2, #temas-col3 {
-		padding: 60px 0 0 4px;
-		width: 132px;
+		padding: 0 0 0 5px;
+		width: 133px;
 		float: left;
 	}
 	
@@ -462,8 +467,8 @@ ul li a:hover {
 	
 	/* El contenedor de la lista */
 	#content-temas div ul {
-		padding: 3px 0 0 2px;
-		height: 105px;
+		padding: 108px 0 0 2px;
+		height: 92px;
 	}
 		
 	#content-temas ul li {
@@ -478,7 +483,7 @@ ul li a:hover {
 	width: 178px;
 	height: 217px;
 	text-align: left;
-	background: url(http://guerrero.gob.mx/skins/gro-base-08/images/servicios_bg.jpg) top center no-repeat;
+	background: url(../images/servicios_bg.jpg) top right no-repeat;
 }
 
 	/* El titulo no se debe mostrar */
@@ -488,28 +493,27 @@ ul li a:hover {
 
 	/* Las ligas van casi en blanco y en negritas */	
 	.whitelinks, .whitelinks a:link, .whitelinks a:visited, .whitelinks a:hover {
-		color: #ffe;
-		font-weight: bold;
-	}
-	
-	/* Para conexiones lentas primero lo ponemos en negro las ligas */
-	.servicios-rojo a {
-		color: #000;
-		font-weight: bold;
 	}
 	
 	/* Listas de los servicios en la caja roja */
 	#servicios-rojo li {
 		margin-left: 10px;
-		padding-left: 35px;
+		padding-left: 30px;
 		line-height: 250%;
 		background-image: none;
+	}
+	
+	/* Para conexiones lentas primero lo ponemos en negro las ligas */
+	.servicios-rojo a {
+		color: #000;
+		font-family: Georgia, "Times New Roman", Times, serif;
 	}
 
 /* Menu izquierdo principal del sitio */
 #main-menu {
-	width: 168px;		
-	background: url(../images/bg_menu.jpg) right top repeat-y;
+	width: 168px;
+	background: url(../images/bg_menu.jpg) top left repeat-y;
+	height: 494px;
 }
 
 	#main-menu .perfiles {
@@ -566,26 +570,21 @@ ul li a:hover {
 /* Caja Blanca donde van las noticias */
 .caja-blanca {
 	width: 414px;
-	background: url(http://guerrero.gob.mx/skins/gro-base-08/images/noticia-sup.gif) top center no-repeat;
-	margin: 10px 0;
-	border-top: 1px solid #fff;
+	margin: 0px 0;
 	clear: both;
 }
 
 	/* Contenido de la caja blanca */
-	.caja-blanca-content {
+	.caja-blanca-content {		
 		margin: 22px 0 -1px 0;
 		padding: 0 5px;
-		border: 1px solid #ccc;
-		border-top-width: 0;
-		border-bottom: 1px solid #fff;
 		clear: both;
 	}
 	
 	/* Borde inferior de la caja blanca */
 	.caja-blanca-inf {
 		height: 24px;
-		background: url(http://guerrero.gob.mx/skins/gro-base-08/images/noticia-inf.gif) top center no-repeat;
+		background: url(../images/sombra-inf.jpg) top center no-repeat;
 	}
 	
 	/*
@@ -597,18 +596,19 @@ ul li a:hover {
 		margin-left: -5px;
 		clear: both;
 	}
-	
-	/* Titulos de noticias y obras principales */	
-	#destacados h3 {
-		padding: 0 0 5px 8px;
-		font-size: large;
-	}
-	
+		
 	
 	/*
 	 * Noticias
 	 *
 	 */
+	 .noticias-splash {
+		 background: url(../images/sombra-sup.jpg) 1px 30px no-repeat;
+	 }
+	 
+	 .noticias-splash ul {
+		 padding-top: 20px;
+	 }
 	 	
 	/* Las listas tienen una medida exacta y sin imagen de decoracion, ocupan el ancho completo de la lista,
 	 * lleva una raya blanca en su parte inferior
@@ -682,6 +682,7 @@ ul li a:hover {
 		margin-top: 5px;
 		border-bottom: 1px solid #ccc;
 		width: 255px;
+		padding-left: 10px;
 	}
 	
 	/* la imagen va un poco mas arriba del titulo */
@@ -717,6 +718,14 @@ ul li a:hover {
 		margin-top: -15px;
 		clear: both;
 	}
+	
+	#destacados .titulo-destacado, #destacados h3 {
+		font-size: 20pt;
+		text-align: left;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-weight: normal;
+	}
+
 		
 
 /**************************************************************************************
@@ -788,9 +797,8 @@ ul li a:hover {
 .bloque-info {
 	width: 170px;
 	margin: 2px auto 0 auto;
-	/*background: url(http://guerrero.gob.mx/skins/gro-base-08/images/menu_inf.png) center 98% no-repeat;*/
 	padding-bottom: 13px;
-	line-height: 50%;
+	line-height: 70%;
 	text-align: left;
 	min-height: 80px;
 }
@@ -837,7 +845,7 @@ ul li a:hover {
 	
 	/* Las noticias tienen mas padding para que quede mas al centro */
 	.bloque-noticias div p {
-		padding: 14px 18px 0 18px;
+		padding: 10px 10px 0 10px;
 	}
 	
 	/* La imagen de la noticia se centra y queda salida del cuadro */
@@ -847,40 +855,53 @@ ul li a:hover {
 	
 	/* La caja de herramientas tiene mas espaciado a la izquierda */
 	.bloque-tools {background-image: none;}
-	
-	.bloque-tools li {
-        background-image: none;
-    }
-	
+		
 	.bloque-tools div {
-		padding-top: 4px;
-		height: 187px;
-		background: url(http://guerrero.gob.mx/skins/gro-base-08/images/tools_bg.jpg) top center no-repeat;
+	padding-top: 0px;
+	height: 247px;
+	background: url(../images/tools_bg.jpg) top left no-repeat;
 	}
 	
 	.bloque-tools li {
-		padding-left: 25px;
-		line-height: 170%;
+		padding-left: 40px;
+		line-height: 130%;
 		background-image: none;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 11px;
+		padding-top: 6px;
+		padding-bottom: 12px;
 	}
 	
 	/* Fondo para los que miden 85 de alto */
-	.bloque-efemerides div, .bloque-clima div, .bloque-encuesta div {
-		height: 85px;
-		background: url(http://guerrero.gob.mx/skins/gro-base-08/images/bgbloque-85.png) bottom center repeat-x;
-		font-size: 8pt;
+	.bloque-efemerides, .bloque-clima div {
+	height: 189px;
+	background: url(../images/eventos_bg.jpg) top right repeat-x;
+	}
+	
+	.bloque-eventos {
+		border: 1px solid #ccc;
+		border-top: none;
+		background-color: #def1f7;
+		
 	}
 	
 	/* Fondo para los eventos */
 	.bloque-eventos div {
-		/*height: 210px;*/
-		background: url(http://guerrero.gob.mx/skins/gro-base-08/images/bgbloque-196.png) bottom center repeat-x;
+		background: #def1f7 url(../images/eventos_bg1.jpg) top center repeat-x;
+	}
+	
+	.bloque-eventos div h3 {
+		padding-top: 8px;
+		font-size: 1.3em;
+		color: #fff;
+		font-weight: normal;
 	}
 	
 	/* La imagen de los eventos debe ser de medidas especificas */
 	.bloque-eventos img {
 		width: 118px;
 		height: 75px;
+		padding-top: 4px;
 	}
 	
 	.bloque-ligas, .bloque-ligas div {
@@ -909,6 +930,38 @@ ul li a:hover {
 	
 	.bloque-clima .vermas {
 		padding-top: 10px;
+	}
+	
+	.bloque-rss {
+		background: url(../images/rss_bg.jpg) 0 0 no-repeat;	
+	}
+	
+	.bloque-rss h3, .bloque-encuesta h3 {
+		color: #336699;
+		font-size: 15px;
+		padding-top: 50px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.bloque-rss p, .bloque-rss p a, .bloque-encuesta p, .bloque-encuesta p a {
+		font-size: 13px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #6c6c6c;
+		text-decoration: none;
+		line-height: 120%;
+	}
+	
+	.bloque-encuesta {
+		background: #fff url(../images/encuesta_bg.jpg) top center repeat-x;
+	}
+	
+	.bloque-encuesta h3 {
+		padding-top: 15px;
+	}
+	
+	.bloque-encuesta p {
+		text-align: center;
 	}
 
 /* Los banners del sitio */
@@ -1126,16 +1179,6 @@ a.verdeps0:hover {
 hr {
 	border: 1px solid #ddd;
 	height: 1px;
-}
-
-.bloque-rss {
-	background: url(../images/rss_bg.jpg) 0 0 no-repeat;	
-}
-
-.bloque-rss h3 {
-	color: #336699;
-	font-size: large;
-	padding-top: 30px;
 }
 
 }
