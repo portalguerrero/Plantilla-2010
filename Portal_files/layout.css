@@ -669,6 +669,7 @@ ul li a:hover {
 		clear: both;
 		padding: 8px 5px 0 5px;
 		margin: 5px 20px 2px 0;
+		display: none;
 	}
 	
 	
