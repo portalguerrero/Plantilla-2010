@@ -271,11 +271,10 @@ ul li a:hover {
 	#menu-superior div {
 		background-color: #333;
 		font-weight: bold;
-		background: #333 url(../images/bg-botonesoff.jpg) center bottom no-repeat;
 	}
 	
 	#menu-superior div:hover {
-			background: #333 url(../images/bg.jpg) center bottom repeat-x;
+			background-color: #5fc7e0;
 		}
 	
 	/* El titulo del menu no se debe mostrar */
@@ -319,7 +318,7 @@ ul li a:hover {
 	
 		/* Respuesta al evento mouseOver en Inicio y seleccionado */
 		#tag-inicio #inicio div, #tag- #inicio div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Perfiles y temas */
@@ -328,7 +327,7 @@ ul li a:hover {
 	}
 		/* Respuesta al evento mouseOver en Perfiles y temas */
 		#tag-audytem #audytem div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Tramites y servicios */
@@ -337,7 +336,7 @@ ul li a:hover {
 	}
 		/* Respuesta al evento mouseOver en Tramites y servicios */
 		#tag-tramyserv #tramyserv div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Gobierno */
@@ -347,7 +346,7 @@ ul li a:hover {
 	
 		/* Respuesta al evento mouseOver en Gobierno */
 		#tag-gobierno #gobierno div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Nuestro estado */
@@ -357,7 +356,7 @@ ul li a:hover {
 
 		/* Respuesta al evento mouseOver en Nuestro estado */
 		#tag-nestado #nestado div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Sala de prensa */
@@ -367,7 +366,7 @@ ul li a:hover {
 
 		/* Respuesta al evento mouseOver en Sala de prensa */
 		#tag-noticias #noticias div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 	
 	/* Contacto */
@@ -378,7 +377,7 @@ ul li a:hover {
 	
 		/* Respuesta al evento mouseOver en Contacto */
 		#tag-contacto #contacto div {
-			background: #333 url(../images/bg-botoneson.jpg) center bottom repeat-x;
+			background-color: #47b7df;
 		}
 
 /**
@@ -488,14 +487,8 @@ ul li a:hover {
 }
 
 	/* El titulo no se debe mostrar */
-	#servicios-rojo h3 {
-		display: none;
-	}		
+	#servicios-rojo h3 { display: none; }		
 
-	/* Las ligas van casi en blanco y en negritas */	
-	.whitelinks, .whitelinks a:link, .whitelinks a:visited, .whitelinks a:hover {
-	}
-	
 	/* Listas de los servicios en la caja roja */
 	#servicios-rojo li {
 		margin-left: 10px;
@@ -513,7 +506,7 @@ ul li a:hover {
 /* Menu izquierdo principal del sitio */
 #main-menu {
 	width: 168px;
-	background: url(../images/bg_menu.jpg) top left repeat-y;
+	background: url(../images/bg_menu.jpg) top left no-repeat;
 	height: 494px;
 }
 
@@ -523,11 +516,7 @@ ul li a:hover {
 	
 	#main-menu .temas-ul {
 		background: url(../images/bg-menu3.jpg) right bottom no-repeat;
-	}
-
-    #main-menu li {
-        background-image: none;
-    }
+	}    
 
 /* Los menus interiores */
 #sub-menu {
@@ -538,21 +527,28 @@ ul li a:hover {
 
 	/* Contenido de los titulares del menu con la imagen de fondo */
 	#main-menu h3, #sub-menu div h3 {
-		width: 168px;
-		height: 25px;
-		padding-top: 5px;	
-		text-align: center;
-	}			
-
-	/* El icono de la flecha va en el div adentro del li */
-	#main-menu li div {
-		padding-left: 10px;
-		margin-left: 8px;
+	width: 168px;
+	height: 20px;
+	padding-top: 12px;
+	text-align: left;
+	padding-left: 35px;
+	padding-bottom: 0px;
 	}
 	
 	/* No poner imagenes en el menu, vienen en el fondo */
 	#main-menu li {
-		background-image: url(../images/arrow-menu.jpg) center top no-repeat;;
+		background-image: none;
+	}
+
+	/* El icono de la flecha va en el div adentro del li */
+	#main-menu li div {
+		padding-left: 10px;
+		margin-left: 18px;
+		background: url(../icons/arrow-menu.jpg) 1px 4px no-repeat;
+	}	
+	
+	#main-menu li a {
+		font-family: Georgia, "Times New Roman", Times, serif;
 	}
 
 	/* Los submenus llevan la flechita */
