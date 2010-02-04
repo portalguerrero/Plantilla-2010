@@ -869,8 +869,8 @@ ul li a:hover {
 		padding: 0 0 0 17px;
 	}
 	
-	/* La caja de herramientas tiene mas espaciado a la izquierda */
-	.bloque-tools {background-image: none;}
+/* La caja de herramientas tiene mas espaciado a la izquierda */
+.bloque-tools {background-image: none;}
 		
 	.bloque-tools div {
 	padding-top: 0px;
@@ -894,12 +894,34 @@ ul li a:hover {
 		background: url(../images/eventos_bg.jpg) top right repeat-x;
 	}
 	
-	.bloque-eventos {
-		border: 1px solid #ccc;
-		border-top: none;
-		background-color: #def1f7;
-		
+	.bloque-efemerides h3 {
+		color: #6c6c6c;
+		font-size: 16px;
+		font-weight: normal;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		padding: 10px 10px 16px 0;
+		word-spacing: -1px;
 	}
+	
+	.bloque-efemerides li {
+		padding: 0 6px 0 4px;
+	}
+	
+	.bloque-efemerides a {
+		color: #6c6c6c;
+		font-size: 11px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.bloque-efemerides .vermas {
+	}
+	
+.bloque-eventos {
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #def1f7;
+	
+}
 	
 	/* Fondo para los eventos */
 	.bloque-eventos div {
@@ -949,10 +971,10 @@ ul li a:hover {
 		background-position: left 10%;
 	}
 	
-	/* la imagen del clima sale un poco de la caja */
-	.bloque-clima div img {
-		margin: -18px 0 0 2px;
-	}
+/* la imagen del clima sale un poco de la caja */
+.bloque-clima div img {
+	margin: -18px 0 0 2px;
+}
 	
 	/* La imagen de la lista del clima debe ir al centro */
 	.bloque-clima li {
@@ -962,9 +984,9 @@ ul li a:hover {
 	.bloque-clima .vermas {
 	}
 	
-	.bloque-rss {
-		background: url(../images/rss_bg.jpg) 0 0 no-repeat;	
-	}
+.bloque-rss {
+	background: url(../images/rss_bg.jpg) 0 0 no-repeat;	
+}
 	
 	.bloque-rss h3, .bloque-encuesta h3 {
 		color: #336699;
@@ -982,9 +1004,9 @@ ul li a:hover {
 		line-height: 120%;
 	}
 	
-	.bloque-encuesta {
-		background: #fff url(../images/encuesta_bg.jpg) top center repeat-x;
-	}
+.bloque-encuesta {
+	background: #fff url(../images/encuesta_bg.jpg) top center repeat-x;
+}
 	
 	.bloque-encuesta h3 {
 		padding-top: 15px;
