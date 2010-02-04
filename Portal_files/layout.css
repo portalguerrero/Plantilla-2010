@@ -282,7 +282,7 @@ ul li a:hover {
 	#menu-superior div h3 {
 		display: none;
 	}
-	
+		
 	/* Las listas deben mostrarse horizontal y son decoracion */
 	#menu-superior div ul, #menu-superior div li {
 		margin: 0;
@@ -305,7 +305,7 @@ ul li a:hover {
 		text-align: center;	
 		float: left;
 		line-height: 28px;
-		margin-right: 1px;
+		margin-right: 2px;
 	}
 	
 	#menu-superior .menu-option a { color: #fff; }
@@ -313,6 +313,7 @@ ul li a:hover {
 	/* Inicio */
 	#menu-superior .red div {
 		width: 90px;
+		margin-left: 8px;
 		/*background: #333 url(../images/binicio_off.jpg) center bottom no-repeat;*/
 	}		
 	
@@ -323,7 +324,7 @@ ul li a:hover {
 	
 	/* Perfiles y temas */
 	#menu-superior .blue div {
-		width: 134px;
+		width: 130px;
 	}
 		/* Respuesta al evento mouseOver en Perfiles y temas */
 		#tag-audytem #audytem div {
@@ -341,7 +342,7 @@ ul li a:hover {
 	
 	/* Gobierno */
 	#menu-superior .yellow div {
-		width: 84px;
+		width: 80px;
 	}
 	
 		/* Respuesta al evento mouseOver en Gobierno */
@@ -351,7 +352,7 @@ ul li a:hover {
 	
 	/* Nuestro estado */
 	#menu-superior .orange div {
-		width: 117px;
+		width: 115px;
 	}
 
 		/* Respuesta al evento mouseOver en Nuestro estado */
@@ -361,7 +362,7 @@ ul li a:hover {
 	
 	/* Sala de prensa */
 	#menu-superior .navy div {
-		width: 124px;
+		width: 120px;
 	}
 
 		/* Respuesta al evento mouseOver en Sala de prensa */
@@ -371,7 +372,7 @@ ul li a:hover {
 	
 	/* Contacto */
 	#menu-superior .gray div {
-		width: 89px;
+		width: 90px;
 		clear: right;
 	}
 	
@@ -1144,7 +1145,6 @@ ul li a:hover {
 }
 
 .sec-list p.vermas {
-	/*text-align: right;*/
 	margin: 0;
 	padding: 0;
 	display: inline;
