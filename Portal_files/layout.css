@@ -50,7 +50,7 @@ ul li {
 	padding-bottom: 4px;
 	padding-left: 10px;
 	margin-left: 2px;
-	background: url(http://guerrero.gob.mx/skins/icons/flecha.jpg) 0 30% no-repeat;
+	background: url(http://guerrero.gob.mx/skins/icons/flecha.jpg) 0px 5px no-repeat;
 }
 
 /* las ligas de las listas no tienen estan subrayadas */
@@ -871,6 +871,17 @@ p.vermas a {
 		padding: 0 0 0 17px;
 	}
 	
+.bloque-214x178 {
+	height: 214px;
+	width: 178px;
+	background: url(../images/tramitesyprogramas_bg.jpg) top right no-repeat;
+}
+
+	.bloque-214x178 li {
+		padding: 0 6px 0 10px;
+		line-height: 150%;
+	}
+	
 /* La caja de herramientas tiene mas espaciado a la izquierda */
 .bloque-tools {background-image: none;}
 		
@@ -896,7 +907,7 @@ p.vermas a {
 		background: url(../images/eventos_bg.jpg) top right repeat-x;
 	}
 	
-	.bloque-efemerides h3 {
+	.bloque-efemerides h3, .bloque-214x178 h3 {
 		color: #6c6c6c;
 		font-size: 16px;
 		font-weight: normal;
@@ -908,17 +919,16 @@ p.vermas a {
 	.bloque-efemerides li {
 		padding: 0 6px 0 4px;
 		background-image: none;
-	}
+	} 
 	
-	.bloque-efemerides a {
+	.bloque-efemerides a, .bloque-214x178 a {
 		color: #6c6c6c;
 		font-size: 11px;
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	
-	.bloque-efemerides .vermas {
-	}
-	
+	.bloque-efemerides .vermas {}
+
 .bloque-eventos {
 	border: 1px solid #ccc;
 	border-top: none;
@@ -959,7 +969,7 @@ p.vermas a {
 		background-image: none;
 		font-weight: bold;
 	}
-	
+		
 .bloque-ligas, .bloque-ligas div {
 	background-image: none;
 }
