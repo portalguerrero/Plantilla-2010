@@ -33,10 +33,35 @@ body, div, span, td, th, h1, h2, h3, h4, h5, h6, ul, li {
 	font: normal 9pt Arial, Helvetica, sans-serif;
 }
 
+/* Quita los espacios a los ul y los separa del borde superior */
+ul {
+	padding: 4px 0 0 0;
+	margin: 0;
+}
+
 /* Se le quitan los adornos a las listas */
 ul, li {
 	list-style-type: none;
 	font-size: 8.5pt;
+}
+
+/* Separacion inferior de cada elemento en la lista, la imagen queda alineada verticalmente al centro y a la izquierda en horizontal */
+ul li {
+	padding-bottom: 4px;
+	padding-left: 10px;
+	margin-left: 2px;
+	background: url(http://guerrero.gob.mx/skins/icons/flecha.jpg) 0 30% no-repeat;
+}
+
+/* las ligas de las listas no tienen estan subrayadas */
+ul li a {
+	text-decoration: none;
+	/*clear: both;*/
+}
+
+/* Cuando se pasa por una liga de las listas se subrayan */
+ul li a:hover {
+	text-decoration: underline;
 }
 
 /* Los titulos son en negritas */
@@ -103,31 +128,6 @@ p.vermas a {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	background: url(../icons/arrow-vermas.jpg) 0px 4px no-repeat;
 	padding-left: 15px;
-}
-
-/* Quita los espacios a los ul y los separa del borde superior */
-ul {
-	padding: 4px 0 0 0;
-	margin: 0;
-}		
-
-/* Separacion inferior de cada elemento en la lista, la imagen queda alineada verticalmente al centro y a la izquierda en horizontal */
-ul li {
-	padding-bottom: 4px;
-	padding-left: 10px;
-	margin-left: 2px;
-	background: url(../icons/arrow-articulos.jpg) top center no-repeat;
-}
-
-/* las ligas de las listas no tienen estan subrayadas */
-ul li a {
-	text-decoration: none;
-	/*clear: both;*/
-}
-
-/* Cuando se pasa por una liga de las listas se subrayan */
-ul li a:hover {
-	text-decoration: underline;
 }
 
 .depsmenu {
@@ -479,6 +479,7 @@ ul li a:hover {
 		font-size: 8pt;
 		line-height: 135%;
 		background-position: left 20%;
+		background: url(../icons/arrow-articulos.jpg) 0px 3px no-repeat;
 	}
 	
 	#content-temas .vermas a {
@@ -828,8 +829,9 @@ ul li a:hover {
 		padding-top: 2px;
 	}
 	
+	/* Elimina la imagen de las listas */
 	.bloque-info li {
-		background-image: none;
+		/*background-image: none;*/
 	}
 	
 	/* Cuando pasan sobre una liga aparece subrayada */
@@ -905,6 +907,7 @@ ul li a:hover {
 	
 	.bloque-efemerides li {
 		padding: 0 6px 0 4px;
+		background-image: none;
 	}
 	
 	.bloque-efemerides a {
