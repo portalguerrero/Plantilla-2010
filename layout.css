@@ -1045,40 +1045,35 @@ p.vermas a {
 
 /* Pie de pagina del sitio */
 #pie {
-	height: 51px;
-	border-top: 1px solid #fff;
-	border-bottom: 10px solid #fff;
-	background-color: #cce6ff;
-	clear: both;
+	height: 100px;
+	clear: both;	
+	background: #fff url(http://guerrero.gob.mx/skins/portal2010/images/piepagina.jpg) center center no-repeat;	
 }	
 	
 	/* Contenido del pie de pagina */
 	#pie div {
-		height: 25px;
-		padding: 2px 0 0 10px;
-		font-size: 8pt;
-		line-height: 180%;
+		height: 21px;
+		padding: 15px 0 0 150px;
+		font-size: 9px;
+		line-height: 100%;
+		color: #000;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 	/* El logotipo se pone a la derecha sobre */
 	#pie-logo {		
-		width: 26px;
-		height: 45px;
-		margin-top: 3px;
-		float: right;
-		margin: -58px 20px 0 0;
-		background: url(http://guerrero.gob.mx/skins/gro-base-08/images/pie.gif) center center no-repeat;
+		width: 1px;
+		height: 1px;
+		display: none;
 	}
 	
 	/* La primer linea lleva un borde blanco que separa el fondo en dos partes */
 	#pie-first-line {
-		border-bottom: 1px solid #fff;
+		margin-bottom: 15px;
 	}
 	
 	#pie-validador {
-		float: left;
-		margin-top: -25px;
-		margin-left: 620px;
+		display: inline;
 		vertical-align: top;
 		width: 100px;
 	}
@@ -1086,15 +1081,13 @@ p.vermas a {
 	#pie-validador li {
 		display: inline;
 		background-image: none;
+		padding-left: 0px;
 	}
 	
 	#pie-validador a {
-        background-color: #dd4300;
-        color: #fff;
-        font-size: xx-small;
-        font-weight: bold;
-        text-decoration: none;
         padding: 0 3px;
+		margin-right: 8px;
+		text-transform: uppercase;
     }
 	
 /*
