@@ -1,3 +1,4 @@
+/* Coordinacion del portal de Internet Guerrero */
 @media print {
 body {
 	background-color: #fff;
@@ -166,10 +167,6 @@ p.vermas a {
 	line-height: 16px;
 }
 
-#encabezado {
-	height: 139px;
-}
-
 	/* Posicion del logotipo */
 	#logo {
 		padding-left: 30px;
@@ -195,26 +192,34 @@ p.vermas a {
 	/* Imagen de bienvenida del index */
 	#welcome {
 		width: 340px;
-		height: 50px;
+		height: 60px;
 		float: right;		
 	}
-	
-	#encabezado #welcome {
-		height: 87px;
-	}
-	
+		
 		/* Subtitulo de la pagina */
 		#welcome h2 {
 			display: none;
 		}
+		
+	#boton-search {
+		float: right;
+		margin: 6px 18px 0 0;
+	}
 	
 	/* Bucsador sobre la pleca */
 	#buscador {
-	margin: 20px 0 0 140px;
-	}
+		margin: 0px 0 0 140px;
+	}				
 	
-		#encabezado #buscador {
-			margin-top: 38px;
+		#encabezado #buscador, #encabezado-main #buscador {
+			margin-top: 12px;
+			margin-bottom: 10px;
+		}
+				
+		#welcome #buscador #q {
+			border: 0;
+			padding: 4px 2px;
+			margin-top: 8px;
 		}
 	
 		/* No mostrar la etiqueta del buscador */
@@ -890,6 +895,10 @@ p.vermas a {
 	
 /* La caja de herramientas tiene mas espaciado a la izquierda */
 .bloque-tools {background-image: none;}
+
+	.bloque-tools h3 {
+		display: none;
+	}
 		
 	.bloque-tools div {
 	padding-top: 0px;
@@ -898,13 +907,11 @@ p.vermas a {
 	}
 	
 	.bloque-tools li {
-		padding-left: 40px;
 		line-height: 130%;
 		background-image: none;
 		font-family: Georgia, "Times New Roman", Times, serif;
 		font-size: 11px;
-		padding-top: 6px;
-		padding-bottom: 12px;
+		padding: 6px 0 12px 38px;
 	}
 	
 	/* Fondo para los que miden 85 de alto */
@@ -1026,7 +1033,8 @@ p.vermas a {
 }
 	
 	.bloque-encuesta h3 {
-		padding-top: 15px;
+		padding-top: 50px;
+		padding-bottom: 8px;
 	}
 	
 	.bloque-encuesta p {
